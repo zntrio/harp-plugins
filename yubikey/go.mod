@@ -8,7 +8,7 @@ require (
 	github.com/elastic/harp-plugins/cmd/harp-yubikey v0.0.2
 	github.com/fatih/color v1.13.0
 	github.com/fxamacker/cbor/v2 v2.4.0
-	github.com/go-piv/piv-go v1.9.0
+	github.com/go-piv/piv-go v1.11.0
 	github.com/magefile/mage v1.12.1
 	github.com/spf13/cobra v1.3.0
 	go.uber.org/zap v1.20.0
