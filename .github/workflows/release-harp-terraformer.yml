@@ -7,6 +7,9 @@ on:
         description: 'Release version'
         required: true
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,24 +31,34 @@ jobs:
             tools-image: ghcr.io/elastic/harp/harp-tools-fips:latest
             harp-image: harp-terraformer-fips
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@128a63446a954579617e875aaab7d2978154e969 # v2.4.0
+        with:
+          egress-policy: audit
+
+      - name: Harden Runner
+        uses: step-security/harden-runner@128a63446a954579617e875aaab7d2978154e969 # v2.4.0
+        with:
+          egress-policy: audit
+
       -
         name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
         with:
           fetch-depth: 0
       -
         name: Set up Go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@bfdd3570ce990073878bf10f6b2d79082de49492 # v2.2.0
         with:
           go-version: 1.17
       -
         name: Set up Docker Buildx
         id: buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@f211e3e9ded2d9377c8cadc4489a4e38014bc4c9 # v1.7.0
         with:
           install: true
       - name: Cache Docker layers
-        uses: actions/cache@v2
+        uses: actions/cache@8492260343ad570701412c2f464a5877dc76bace # v2
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-multi-buildx-terraformer-${{ matrix.golang-version }}-${{ github.sha }}
@@ -70,7 +83,7 @@ jobs:
           RELEASE: ${{ github.event.inputs.release }}
       -
         name: Generate Dockerfile
-        uses: magefile/mage-action@v1
+        uses: magefile/mage-action@0a2bfd2ca891da3552ae39be755aecdce60ed1bc # v1.7.0
         with:
           version: latest
           args: releaser:terraformer
@@ -84,7 +97,7 @@ jobs:
       -
         name: Build Docker image
         id: docker_build
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a # v2.10.0
         with:
           context: .
           file: Dockerfile.release
@@ -101,7 +114,7 @@ jobs:
             RELEASE=${{ github.event.inputs.release }}
       -
         name: Create SBOM
-        uses: anchore/sbom-action@v0
+        uses: anchore/sbom-action@4d571ad1038a9cc29d676154ef265ab8f9027042 # v0.14.2
         with:
           image: ghcr.io/elastic/harp-plugins/${{ matrix.harp-image }}:v${{ github.event.inputs.release }}
           registry-username: ${{ github.actor }}
@@ -109,7 +122,7 @@ jobs:
           artifact-name: sbom.spdx
           format: spdx
       -
-        uses: sigstore/cosign-installer@main
+        uses: sigstore/cosign-installer@1a22e17968bb5f9192b82a39d3ffb322627f5169 # main
       -
         name: Sign image and add attestations
         run: |
@@ -146,14 +159,14 @@ jobs:
       -
         name: Extract artifacts from the docker image
         id: extract-std
-        uses: shrink/actions-docker-extract@v1
+        uses: shrink/actions-docker-extract@7d86f1b9adc7afe4a64e13fb425872a547d6afa3 # v1.0.3
         with:
           image: ghcr.io/elastic/harp-plugins/harp-terraformer:v${{ github.event.inputs.release }}
           path: '/app/.'
       -
         name: Extract FIPS artifacts from the docker image
         id: extract-fips
-        uses: shrink/actions-docker-extract@v1
+        uses: shrink/actions-docker-extract@7d86f1b9adc7afe4a64e13fb425872a547d6afa3 # v1.0.3
         with:
           image: ghcr.io/elastic/harp-plugins/harp-terraformer-fips:v${{ github.event.inputs.release }}
           path: '/app/.'
@@ -172,7 +185,7 @@ jobs:
           cd .dist
           sha512sum * > checksum.txt
       -
-        uses: sigstore/cosign-installer@main
+        uses: sigstore/cosign-installer@1a22e17968bb5f9192b82a39d3ffb322627f5169 # main
       -
         name: Sign the checksum
         run: |
@@ -186,7 +199,7 @@ jobs:
           COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
       -
         name: Upload to release
-        uses: AButler/upload-release-assets@v2.0
+        uses: AButler/upload-release-assets@ec6d3263266dc57eb6645b5f75e827987f7c217d # v2.0
         with:
           files: '.dist/*'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
