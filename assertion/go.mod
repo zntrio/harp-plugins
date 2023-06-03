@@ -11,7 +11,7 @@ require (
 	github.com/magefile/mage v1.12.1
 	github.com/mitchellh/mapstructure v1.4.3
 	github.com/spf13/cobra v1.3.0
-	go.uber.org/zap v1.20.0
+	go.uber.org/zap v1.24.0
 	gopkg.in/square/go-jose.v2 v2.6.0
 )
 
