@@ -5,16 +5,17 @@ go 1.17
 require (
 	github.com/aws/aws-sdk-go v1.42.44
 	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
-	github.com/elastic/harp v0.2.5
+	github.com/elastic/harp v0.2.10
 	github.com/fatih/color v1.13.0
 	github.com/magefile/mage v1.12.1
-	github.com/spf13/cobra v1.3.0
-	go.uber.org/zap v1.20.0
+	github.com/spf13/cobra v1.4.0
+	go.uber.org/zap v1.21.0
 	golang.org/x/crypto v0.1.0
 )
 
 require (
 	filippo.io/edwards25519 v1.0.0-rc.1 // indirect
+	github.com/MakeNowJust/heredoc/v2 v2.0.1 // indirect
 	github.com/Masterminds/semver/v3 v3.1.1 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20200108200545-475eaeb16496 // indirect
 	github.com/awnumar/memcall v0.0.0-20191004114545-73db50fd9f80 // indirect
@@ -42,7 +43,7 @@ require (
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/pelletier/go-toml v1.9.4 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/spf13/afero v1.8.0 // indirect
+	github.com/spf13/afero v1.8.1 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
