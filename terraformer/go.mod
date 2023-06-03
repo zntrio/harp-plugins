@@ -12,7 +12,7 @@ require (
 	github.com/gosimple/slug v1.12.0
 	github.com/hashicorp/hcl/v2 v2.11.1
 	github.com/magefile/mage v1.12.1
-	github.com/spf13/cobra v1.3.0
+	github.com/spf13/cobra v1.7.0
 	go.uber.org/zap v1.24.0
 	google.golang.org/protobuf v1.27.1
 	gopkg.in/yaml.v2 v2.4.0
@@ -43,7 +43,7 @@ require (
 	github.com/huandu/xstrings v1.3.2 // indirect
 	github.com/iancoleman/strcase v0.2.0 // indirect
 	github.com/imdario/mergo v0.3.12 // indirect
-	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/kr/pretty v0.2.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
