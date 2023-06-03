@@ -58,7 +58,7 @@ jobs:
         with:
           install: true
       - name: Cache Docker layers
-        uses: actions/cache@8492260343ad570701412c2f464a5877dc76bace # v2
+        uses: actions/cache@88522ab9f39a2ea568f7027eddc7d8d8bc9d59c8 # v3
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-multi-buildx-terraformer-${{ matrix.golang-version }}-${{ github.sha }}
