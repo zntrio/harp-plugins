@@ -6,7 +6,7 @@ require (
 	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
 	github.com/elastic/harp v0.2.5
 	github.com/elastic/harp-plugins/cmd/harp-yubikey v0.0.2
-	github.com/fatih/color v1.13.0
+	github.com/fatih/color v1.15.0
 	github.com/fxamacker/cbor/v2 v2.4.0
 	github.com/go-piv/piv-go v1.9.0
 	github.com/magefile/mage v1.12.1
@@ -34,8 +34,8 @@ require (
 	github.com/iancoleman/strcase v0.2.0 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
-	github.com/mattn/go-colorable v0.1.12 // indirect
-	github.com/mattn/go-isatty v0.0.14 // indirect
+	github.com/mattn/go-colorable v0.1.13 // indirect
+	github.com/mattn/go-isatty v0.0.17 // indirect
 	github.com/mcuadros/go-defaults v1.2.0 // indirect
 	github.com/miscreant/miscreant.go v0.0.0-20200214223636-26d376326b75 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
@@ -51,7 +51,7 @@ require (
 	github.com/x448/float16 v0.8.4 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
-	golang.org/x/sys v0.1.0 // indirect
+	golang.org/x/sys v0.6.0 // indirect
 	golang.org/x/term v0.1.0 // indirect
 	golang.org/x/text v0.4.0 // indirect
 	gopkg.in/ini.v1 v1.66.2 // indirect
