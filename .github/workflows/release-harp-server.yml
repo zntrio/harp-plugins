@@ -83,7 +83,7 @@ jobs:
           RELEASE: ${{ github.event.inputs.release }}
       -
         name: Generate Dockerfile
-        uses: magefile/mage-action@0a2bfd2ca891da3552ae39be755aecdce60ed1bc # v1.7.0
+        uses: magefile/mage-action@3b833fb24c0d19eed3aa760b9eb285b4b84f420f # v2.3.0
         with:
           version: latest
           args: releaser:server
