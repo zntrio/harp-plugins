@@ -7,7 +7,7 @@ require (
 	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
 	github.com/elastic/harp v0.2.5
 	github.com/fatih/color v1.13.0
-	github.com/magefile/mage v1.12.1
+	github.com/magefile/mage v1.15.0
 	github.com/spf13/cobra v1.3.0
 	go.uber.org/zap v1.20.0
 	golang.org/x/crypto v0.1.0
