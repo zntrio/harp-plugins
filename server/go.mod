@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	cloud.google.com/go/storage v1.19.0
-	github.com/Azure/azure-sdk-for-go v61.4.0+incompatible
+	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
 	github.com/awnumar/memguard v0.22.3
 	github.com/aws/aws-sdk-go v1.42.44
 	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
