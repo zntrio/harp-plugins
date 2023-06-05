@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
 	github.com/elastic/harp v0.2.5
-	github.com/fatih/color v1.13.0
+	github.com/fatih/color v1.15.0
 	github.com/go-ozzo/ozzo-validation/v4 v4.3.0
 	github.com/golang/protobuf v1.5.2
 	github.com/google/gofuzz v1.2.0
@@ -47,8 +47,8 @@ require (
 	github.com/kr/pretty v0.2.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
-	github.com/mattn/go-colorable v0.1.12 // indirect
-	github.com/mattn/go-isatty v0.0.14 // indirect
+	github.com/mattn/go-colorable v0.1.13 // indirect
+	github.com/mattn/go-isatty v0.0.17 // indirect
 	github.com/mcuadros/go-defaults v1.2.0 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.0 // indirect
@@ -72,7 +72,7 @@ require (
 	go.uber.org/multierr v1.6.0 // indirect
 	golang.org/x/crypto v0.1.0 // indirect
 	golang.org/x/net v0.7.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
+	golang.org/x/sys v0.6.0 // indirect
 	golang.org/x/term v0.5.0 // indirect
 	golang.org/x/text v0.7.0 // indirect
 	google.golang.org/genproto v0.0.0-20220126215142-9970aeb2e350 // indirect
