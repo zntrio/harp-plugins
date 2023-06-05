@@ -11,7 +11,7 @@ require (
 	github.com/google/gofuzz v1.2.0
 	github.com/gosimple/slug v1.12.0
 	github.com/hashicorp/hcl/v2 v2.11.1
-	github.com/magefile/mage v1.12.1
+	github.com/magefile/mage v1.15.0
 	github.com/spf13/cobra v1.3.0
 	go.uber.org/zap v1.24.0
 	google.golang.org/protobuf v1.27.1
