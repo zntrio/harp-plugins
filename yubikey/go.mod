@@ -10,7 +10,7 @@ require (
 	github.com/fxamacker/cbor/v2 v2.4.0
 	github.com/go-piv/piv-go v1.9.0
 	github.com/magefile/mage v1.12.1
-	github.com/spf13/cobra v1.3.0
+	github.com/spf13/cobra v1.7.0
 	go.uber.org/zap v1.20.0
 	golang.org/x/crypto v0.1.0
 )
@@ -32,7 +32,7 @@ require (
 	github.com/gosimple/unidecode v1.0.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/iancoleman/strcase v0.2.0 // indirect
-	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
