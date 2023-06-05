@@ -11,7 +11,7 @@ require (
 	github.com/dchest/uniuri v0.0.0-20200228104902-7aecb25e1fe5
 	github.com/elastic/harp v0.2.5
 	github.com/fatih/color v1.13.0
-	github.com/go-chi/chi v1.5.4
+	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/golang/mock v1.6.0
 	github.com/google/wire v0.5.0
 	github.com/gosimple/slug v1.12.0
