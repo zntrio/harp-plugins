@@ -5,7 +5,7 @@ go 1.17
 require (
 	cloud.google.com/go/storage v1.19.0
 	github.com/Azure/azure-sdk-for-go v61.4.0+incompatible
-	github.com/awnumar/memguard v0.22.2
+	github.com/awnumar/memguard v0.22.3
 	github.com/aws/aws-sdk-go v1.42.44
 	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
 	github.com/dchest/uniuri v0.0.0-20200228104902-7aecb25e1fe5
@@ -40,7 +40,7 @@ require (
 	github.com/armon/go-metrics v0.3.10 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20200108200545-475eaeb16496 // indirect
-	github.com/awnumar/memcall v0.0.0-20191004114545-73db50fd9f80 // indirect
+	github.com/awnumar/memcall v0.1.2 // indirect
 	github.com/cenkalti/backoff/v3 v3.0.0 // indirect
 	github.com/cloudflare/tableflip v1.2.2 // indirect
 	github.com/dnaeon/go-vcr v1.2.0 // indirect
