@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
-	github.com/dchest/uniuri v0.0.0-20200228104902-7aecb25e1fe5
+	github.com/dchest/uniuri v1.2.0
 	github.com/elastic/harp v0.2.5
 	github.com/fatih/color v1.13.0
 	github.com/hashicorp/vault/api v1.3.1
