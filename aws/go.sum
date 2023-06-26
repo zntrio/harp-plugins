@@ -87,8 +87,8 @@ github.com/awnumar/memcall v0.0.0-20191004114545-73db50fd9f80 h1:8kObYoBO4LNmQ+f
 github.com/awnumar/memcall v0.0.0-20191004114545-73db50fd9f80/go.mod h1:S911igBPR9CThzd/hYQQmTc9SWNu3ZHIlCGaWsWsoJo=
 github.com/awnumar/memguard v0.22.2 h1:tMxcq1WamhG13gigK8Yaj9i/CHNUO3fFlpS9ABBQAxw=
 github.com/awnumar/memguard v0.22.2/go.mod h1:33OwJBHC+T4eEfFcDrQb78TMlBMBvcOPCXWU9xE34gM=
-github.com/aws/aws-sdk-go v1.42.44 h1:vPlF4cUsdN5ETfvb7ewZFbFZyB6Rsfndt3kS2XqLXKo=
-github.com/aws/aws-sdk-go v1.42.44/go.mod h1:OGr6lGMAKGlG9CVrYnWYDKIyb829c6EVBRjxqjmPepc=
+github.com/aws/aws-sdk-go v1.44.289 h1:5CVEjiHFvdiVlKPBzv0rjG4zH/21W/onT18R5AH/qx0=
+github.com/aws/aws-sdk-go v1.44.289/go.mod h1:aVsgQcEevwlmQ7qHE9I3h+dtQgpqhFB+i8Phjh7fkwI=
 github.com/basgys/goxml2json v1.1.0/go.mod h1:wH7a5Np/Q4QoECFIU8zTQlZwZkrilY0itPfecMw41Dw=
 github.com/benbjohnson/clock v1.1.0 h1:Q92kusRqC1XV2MjkWETPvjJVqKetz1OzxZB7mHJLju8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
