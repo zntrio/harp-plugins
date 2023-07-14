@@ -3,7 +3,7 @@ module github.com/elastic/harp-plugins/aws
 go 1.17
 
 require (
-	github.com/aws/aws-sdk-go v1.42.44
+	github.com/aws/aws-sdk-go v1.44.300
 	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
 	github.com/elastic/harp v0.2.5
 	github.com/fatih/color v1.13.0
