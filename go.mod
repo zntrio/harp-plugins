@@ -3,8 +3,8 @@ module github.com/elastic/harp-plugins
 go 1.17
 
 require (
-	github.com/elastic/harp v0.2.5
-	github.com/magefile/mage v1.12.1
+	github.com/elastic/harp v0.2.11
+	github.com/magefile/mage v1.13.0
 )
 
 require (
