@@ -159,14 +159,14 @@ jobs:
       -
         name: Extract artifacts from the docker image
         id: extract-std
-        uses: shrink/actions-docker-extract@7d86f1b9adc7afe4a64e13fb425872a547d6afa3 # v1.0.3
+        uses: shrink/actions-docker-extract@e3f94b301fd03fe200446aff56ca1c6b793210e2 # v2.1.0
         with:
           image: ghcr.io/elastic/harp-plugins/harp-terraformer:v${{ github.event.inputs.release }}
           path: '/app/.'
       -
         name: Extract FIPS artifacts from the docker image
         id: extract-fips
-        uses: shrink/actions-docker-extract@7d86f1b9adc7afe4a64e13fb425872a547d6afa3 # v1.0.3
+        uses: shrink/actions-docker-extract@e3f94b301fd03fe200446aff56ca1c6b793210e2 # v2.1.0
         with:
           image: ghcr.io/elastic/harp-plugins/harp-terraformer-fips:v${{ github.event.inputs.release }}
           path: '/app/.'
