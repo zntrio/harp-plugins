@@ -122,7 +122,7 @@ jobs:
           artifact-name: sbom.spdx
           format: spdx
       -
-        uses: sigstore/cosign-installer@1a22e17968bb5f9192b82a39d3ffb322627f5169 # main
+        uses: sigstore/cosign-installer@4a861528be5e691840a69536975ada1d4c30349d # main
       -
         name: Sign image and add attestations
         run: |
@@ -185,7 +185,7 @@ jobs:
           cd .dist
           sha512sum * > checksum.txt
       -
-        uses: sigstore/cosign-installer@1a22e17968bb5f9192b82a39d3ffb322627f5169 # main
+        uses: sigstore/cosign-installer@4a861528be5e691840a69536975ada1d4c30349d # main
       -
         name: Sign the checksum
         run: |
